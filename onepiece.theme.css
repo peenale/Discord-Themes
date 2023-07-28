@@ -58,7 +58,7 @@
   --home-icon: url('https://clearvision.github.io/icons/discord.svg');
   --home-position: center;
   --home-size: 40px;
-  --channel-unread: #F43636;
+  --channel-unread: #FFFFFF;
   --channel-color: rgb(255,0,0,0.35);
   --muted-color: rgba(255,255,255,0.1);
   --online-color: #4DDB3E;
