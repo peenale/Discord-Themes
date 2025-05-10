@@ -35,14 +35,6 @@
   --background-size: cover;
   --background-repeat: no-repeat;
   --background-attachment: fixed;
-  --background-shading: 100%;
-  --background-brightness: 50%;
-  --background-contrast: 100%;
-  --background-saturation: 100%;
-  --background-grayscale: 0%;
-  --background-invert: 0%;
-  --background-blur: 0px;
-  --background-overlay: rgba(0, 0, 0, 0.6);
 
   /* USER POPOUT BACKGROUND */
   --user-popout-image: url('https://i.imgur.com/9TRUre3.png');
@@ -50,12 +42,6 @@
   --user-popout-size: 130%;
   --user-popout-repeat: no-repeat;
   --user-popout-attachment: fixed;
-  --user-popout-brightness: 60%;
-  --user-popout-contrast: 100%;
-  --user-popout-saturation: 100%;
-  --user-popout-grayscale: 0%;
-  --user-popout-invert: 0%;
-  --user-popout-blur: 3px;
 
   /* USER MODAL BACKGROUND */
   --user-modal-image: url('https://i.imgur.com/0csCtDd.png');
@@ -127,13 +113,13 @@
 
 /* LIGHT THEME */
 :is(.theme-light, .theme-dark .theme-light) {
-  --background-shading: rgba(255, 255, 255, 0.3);
-  --card-shading: rgba(255, 255, 255, 0.3);
-  --popout-shading: rgba(255, 255, 255, 0.7);
-  --modal-shading: rgba(255, 255, 255, 0.5);
-  --input-shading: rgba(0, 0, 0, 0.3);
-  --normal-text: #36363c;
-  --muted-text: #75757e;
+  --background-shading: rgba(0, 0, 0, 0.6);
+  --card-shading: rgba(0, 0, 0, 0.3);
+  --popout-shading: rgba(0, 0, 0, 0.7);
+  --modal-shading: rgba(0, 0, 0, 0.5);
+  --input-shading: rgba(255, 255, 255, 0.05);
+  --normal-text: #fbfbfb;
+  --muted-text: #94949c;
 }
 
 /* DARK THEME */
