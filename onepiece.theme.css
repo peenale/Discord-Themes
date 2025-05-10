@@ -6,26 +6,36 @@
  * @source https://github.com/ClearVision/ClearVision-v6
  * @website https://clearvision.github.io
  * @invite 7pNUC9C
- * @BDEditor Clear Vision
-*/
+ */
 
+/* IMPORT CSS */
 @import url('https://clearvision.github.io/ClearVision-v6/main.css');
 @import url('https://discordstyles.github.io/RadialStatus/dist/RadialStatus.css');
 @import url('https://nyri4.github.io/Discolored/main.css');
 
+/* THEME SETTINGS */
 :root {
+  /* ACCENT COLORS */
   --main-color: #7C932A;
   --hover-color: #596B16;
   --success-color: #43b581;
   --danger-color: #982929;
   --url-color: #257CDF;
-  --undefined: 0;
+
+  /* STATUS COLORS */
+  --online-color: #4DDB3E;
+  --idle-color: #faa61a;
+  --dnd-color: #FF2020;
+  --streaming-color: #593695;
+  --offline-color: #808080;
+
+  /* APP BACKGROUND */
   --background-image: url('https://i.imgur.com/z1UUm1L.png');
-  --background-shading: 100%;
   --background-position: center;
   --background-size: cover;
   --background-repeat: no-repeat;
   --background-attachment: fixed;
+  --background-shading: 100%;
   --background-brightness: 50%;
   --background-contrast: 100%;
   --background-saturation: 100%;
@@ -33,6 +43,8 @@
   --background-invert: 0%;
   --background-blur: 0px;
   --background-overlay: rgba(0,0,0,0.6);
+
+  /* USER POPOUT BACKGROUND */
   --user-popout-image: url('https://i.imgur.com/9TRUre3.png');
   --user-popout-position: center left;
   --user-popout-size: 130%;
@@ -44,6 +56,8 @@
   --user-popout-grayscale: 0%;
   --user-popout-invert: 0%;
   --user-popout-blur: 3px;
+
+  /* USER MODAL BACKGROUND */
   --user-modal-image: url('https://i.imgur.com/0csCtDd.png');
   --user-modal-position: center left;
   --user-modal-size: cover;
@@ -55,21 +69,26 @@
   --user-modal-grayscale: 0%;
   --user-modal-invert: 0%;
   --user-modal-blur: 3px;
+
+  /* HOME ICON */
   --home-icon: url('https://clearvision.github.io/icons/discord.svg');
   --home-position: center;
   --home-size: 40px;
+
+  /* TEXT COLORS */
   --channel-unread: #FFFFFF;
-  --channel-color: rgb(187,187,187,1);
-  --muted-color: rgb(99,99,99,1);
-  --online-color: #4DDB3E;
-  --idle-color: #faa61a;
-  --dnd-color: #FF2020;
-  --streaming-color: #593695;
-  --offline-color: #808080;
+  --channel-color: rgba(187, 187, 187, 1);
+  --muted-color: rgba(99, 99, 99, 1);
+
+  /* FONTS */
   --main-font: gg sans;
   --code-font: Consolas;
+
+  /* LAYOUT SIZES */
   --channels-width: 220px;
   --members-width: 240px;
+
+  /* BACKDROP */
   --backdrop-overlay: rgba(0,0,0,0.8);
   --backdrop-image: var(--background-image);
   --backdrop-position: var(--background-position);
@@ -81,11 +100,14 @@
   --backdrop-saturation: var(--background-saturation);
   --backdrop-invert: var(--background-invert);
   --backdrop-grayscale: var(--background-grayscale);
-  --backdrop-sepia: var(--background-sepia);
   --backdrop-blur: var(--background-blur);
+
+  /* BETTERDISCORD COLORS */
   --bd-blue: var(--main-color);
   --bd-blue-hover: var(--hover-color);
   --bd-blue-active: var(--hover-color);
+
+  /* RADIAL STATUS */
   --rs-small-spacing: 2px;
   --rs-medium-spacing: 3px;
   --rs-large-spacing: 3px;
@@ -101,6 +123,4 @@
   --rs-phone-visible: block;
 }
 
-/* Any custom CSS below here */
-
-
+/* ADDITIONAL CUSTOM CSS BELOW */
