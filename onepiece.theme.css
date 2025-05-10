@@ -13,7 +13,7 @@
 @import url('https://discordstyles.github.io/RadialStatus/dist/RadialStatus.css');
 @import url('https://nyri4.github.io/Discolored/main.css');
 
-/* THEME SETTINGS */
+/* SETTINGS */
 :root {
   /* ACCENT COLORS */
   --main-color: #7C932A;
@@ -42,7 +42,7 @@
   --background-grayscale: 0%;
   --background-invert: 0%;
   --background-blur: 0px;
-  --background-overlay: rgba(0,0,0,0.6);
+  --background-overlay: rgba(0, 0, 0, 0.6);
 
   /* USER POPOUT BACKGROUND */
   --user-popout-image: url('https://i.imgur.com/9TRUre3.png');
@@ -75,21 +75,21 @@
   --home-position: center;
   --home-size: 40px;
 
-  /* TEXT COLORS */
-  --channel-unread: #FFFFFF;
-  --channel-color: rgba(187, 187, 187, 1);
-  --muted-color: rgba(99, 99, 99, 1);
-
   /* FONTS */
   --main-font: gg sans;
   --code-font: Consolas;
 
-  /* LAYOUT SIZES */
+  /* CHANNEL COLORS */
+  --channel-unread: #FFFFFF;
+  --channel-color: rgba(187, 187, 187, 1);
+  --muted-color: rgba(99, 99, 99, 1);
+
+  /* LAYOUT */
   --channels-width: 220px;
   --members-width: 240px;
 
-  /* BACKDROP */
-  --backdrop-overlay: rgba(0,0,0,0.8);
+  /* BACKDROP SETTINGS */
+  --backdrop-overlay: rgba(0, 0, 0, 0.8);
   --backdrop-image: var(--background-image);
   --backdrop-position: var(--background-position);
   --backdrop-size: var(--background-size);
@@ -102,7 +102,7 @@
   --backdrop-grayscale: var(--background-grayscale);
   --backdrop-blur: var(--background-blur);
 
-  /* BETTERDISCORD COLORS */
+  /* BD THEME COLORS */
   --bd-blue: var(--main-color);
   --bd-blue-hover: var(--hover-color);
   --bd-blue-active: var(--hover-color);
@@ -123,4 +123,50 @@
   --rs-phone-visible: block;
 }
 
-/* ADDITIONAL CUSTOM CSS BELOW */
+/* THEME SPECIFIC SHADING */
+
+/* LIGHT THEME */
+:is(.theme-light, .theme-dark .theme-light) {
+  --background-shading: rgba(255, 255, 255, 0.3);
+  --card-shading: rgba(255, 255, 255, 0.3);
+  --popout-shading: rgba(255, 255, 255, 0.7);
+  --modal-shading: rgba(255, 255, 255, 0.5);
+  --input-shading: rgba(0, 0, 0, 0.3);
+  --normal-text: #36363c;
+  --muted-text: #75757e;
+}
+
+/* DARK THEME */
+:is(.theme-dark, .theme-light .theme-dark) {
+  --background-shading: rgba(0, 0, 0, 0.4);
+  --card-shading: rgba(0, 0, 0, 0.2);
+  --popout-shading: rgba(0, 0, 0, 0.6);
+  --modal-shading: rgba(0, 0, 0, 0.4);
+  --input-shading: rgba(255, 255, 255, 0.05);
+  --normal-text: #d8d8db;
+  --muted-text: #aeaeb4;
+}
+
+/* DARKER THEME */
+:is(.theme-darker, .theme-light .theme-darker) {
+  --background-shading: rgba(0, 0, 0, 0.6);
+  --card-shading: rgba(0, 0, 0, 0.3);
+  --popout-shading: rgba(0, 0, 0, 0.7);
+  --modal-shading: rgba(0, 0, 0, 0.5);
+  --input-shading: rgba(255, 255, 255, 0.05);
+  --normal-text: #fbfbfb;
+  --muted-text: #94949c;
+}
+
+/* MIDNIGHT (ONYX) THEME */
+:is(.theme-midnight, .theme-light .theme-midnight) {
+  --background-shading: rgba(0, 0, 0, 0.8);
+  --card-shading: rgba(0, 0, 0, 0.4);
+  --popout-shading: rgba(0, 0, 0, 0.8);
+  --modal-shading: rgba(0, 0, 0, 0.6);
+  --input-shading: rgba(255, 255, 255, 0.05);
+  --normal-text: #dcdcde;
+  --muted-text: #86868e;
+}
+
+/* ADDITIONAL CSS BELOW HERE */
