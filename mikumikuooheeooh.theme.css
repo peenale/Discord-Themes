@@ -10,6 +10,8 @@
 /* IMPORT CSS */
 @import url("https://clearvision.github.io/ClearVision-v7/main.css");
 @import url("https://clearvision.github.io/ClearVision-v7/betterdiscord.css");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+code:wght@100;300;400;500;700&display=swap');
 /* SETTINGS */
 :root {
   /* ACCENT COLORS */
@@ -35,12 +37,12 @@
   --user-popout-image: url('https://i.imgur.com/kNNTKET.jpeg');
   --user-popout-attachment: var(--background-attachment);
   --user-popout-filter: var(--background-filter);
-  --user-popout-position: center;
-  --user-popout-size: cover;
+  --user-popout-position: top center;
+  --user-popout-size: 100%;
   --user-popout-repeat: no-repeat;
-  --user-popout-attachment: fixed;
+  --user-popout-attachment: scroll;
   /* USER MODAL BACKGROUND */
-  --user-modal-image: url('https://clearvision.github.io/images/sapphire.jpg');
+  --user-modal-image: url('https://imgur.com/4u94z5i');
   --user-modal-position: center;
   --user-modal-size: contain;
   --user-modal-repeat: no-repeat;
@@ -50,8 +52,8 @@
   --home-position: center;
   --home-size: 60px;
   /* FONTS */
-  --main-font: "gg sans", Whitney, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  --code-font: Consolas, "gg mono", "Liberation Mono", Menlo, Courier, monospace;
+  --main-font: "Open Sans";
+  --code-font: "Fira Code";
 }
 
 /* THEME SPECIFIC SHADING */
